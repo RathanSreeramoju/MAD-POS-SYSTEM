@@ -12,7 +12,7 @@ public class Profil {
     private double taxes;
     private double total;
     //private float img;
-    private String message;
+   // private String message;
 
     public double getUprice() {
         return uprice;
@@ -30,15 +30,20 @@ public class Profil {
         return total;
     }
 
-    public String getMessage() {
+    /*public String getMessage() {
         return message;
-    }
+    }*/
 
-    public Profil(double uprice, double quantity, double taxes, double total, String message) {
+    public Profil(double uprice, double quantity, double taxes, double total) {
         this.uprice = uprice;
         this.quantity = quantity;
         this.taxes = taxes;
         this.total = total;
-        this.message = message;
+       // this.message = message;
+    }
+
+    private void calculate() {
+        this.taxes = (float)(0.15 * (uprice * quantity));
+        this.total = (float)(1.15*(uprice * quantity));
     }
 }

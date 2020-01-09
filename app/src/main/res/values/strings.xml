@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MAD POS System</string>
+    <string name="simple_message">SIMPLE MESSAGE</string>
 </resources>
