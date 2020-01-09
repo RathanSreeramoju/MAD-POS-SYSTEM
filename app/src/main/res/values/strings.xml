@@ -2,4 +2,9 @@
     <string name="app_name">MAD POS System</string>
     <string name="simple_message">SIMPLE MESSAGE</string>
     <string name="activity2_name">Second Activity</string>
+    <string name="send">SEND</string>
+    <string name="activity3_name">Third Activity</string>
+    <string name="message_recieved">Message Recieved</string>
+    <string name="text_header">Message_recieved</string>
+    <string name="editText_second">Enter your Message here</string>
 </resources>
