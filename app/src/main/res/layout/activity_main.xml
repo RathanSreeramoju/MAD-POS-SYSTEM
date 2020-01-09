@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -222,7 +222,8 @@
                         android:layout_gravity="center|center_horizontal|center_vertical"
                         android:layout_weight="1"
                         android:gravity="center|center_horizontal|center_vertical"
-                        android:text="SIMPLE MESSAGE" />
+                        android:text="@string/simple_message"
+                        android:onClick="launchSecondActivity"/>
                 </LinearLayout>
 
                 <LinearLayout
