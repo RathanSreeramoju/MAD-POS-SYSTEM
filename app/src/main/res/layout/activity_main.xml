@@ -34,7 +34,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Car" />
+                        android:text="Car"
+                        android:checked="true" />
 
                     <RadioButton
                         android:id="@+id/radioButton4"
@@ -134,7 +135,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="numberDecimal" />
+                        android:inputType="numberDecimal"
+                        android:enabled="false"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -158,7 +160,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="numberDecimal" />
+                        android:inputType="numberDecimal"
+                        android:enabled="false"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

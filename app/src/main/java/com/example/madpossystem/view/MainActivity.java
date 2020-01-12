@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.madpossystem.R;
@@ -26,8 +27,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText num1;
     private EditText num2;
     private Button calculate;
-    private TextView taxes;
-    private TextView total;
+    private EditText taxes;
+    private EditText total;
+    private RadioButton rb1,rb2,rb3,rb4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,20 +40,29 @@ public class MainActivity extends AppCompatActivity {
         num1 = (EditText)findViewById(R.id.editText);
         num2 = (EditText)findViewById(R.id.editText2);
         calculate = (Button)findViewById(R.id.button2);
-        taxes = (TextView)findViewById(R.id.editText3);
-        total = (TextView)findViewById(R.id.editText4);
+        taxes = (EditText)findViewById(R.id.editText3);
+        total = (EditText)findViewById(R.id.editText4);
+        RadioButton rb1 = (RadioButton) findViewById(R.id.radioButton5);
+        RadioButton rb2 = (RadioButton) findViewById(R.id.radioButton4);
+        RadioButton rb3 = (RadioButton) findViewById(R.id.radioButton3);
+        RadioButton rb4 = (RadioButton) findViewById(R.id.radioButton2);
 
         num1.addTextChangedListener(watch);
         num2.addTextChangedListener(watch);
+        rb1.setOnClickListener(first_radio_listener);
+        rb2.setOnClickListener(first_radio_listener);
+        rb3.setOnClickListener(first_radio_listener);
+        rb4.setOnClickListener(first_radio_listener);
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int number1 = Integer.parseInt(num1.getText().toString());
                 int number2 = Integer.parseInt(num2.getText().toString());
                 double tax = (number1 * number2)*0.15;
                 double totalresult = (number1 * number2) + tax;
-                taxes.setText("" + String.valueOf(tax));
+                taxes.setText("" + String.valueOf(tax).trim());
                 total.setText("" + String.valueOf(totalresult));
             }
 
@@ -70,12 +82,32 @@ public class MainActivity extends AppCompatActivity {
             String input2 = num2.getText().toString().trim();
 
             calculate.setEnabled(!input1.isEmpty() && !input2.isEmpty());
-
-
         }
 
         @Override
         public void afterTextChanged(Editable s) {
+
+        }
+    };
+
+    final View.OnClickListener first_radio_listener = new View.OnClickListener() {
+        public void onClick(View v) {
+            num1.getText().clear();
+            num2.getText().clear();
+            taxes.getText().clear();
+            total.getText().clear();
+            /*if (rb1.isChecked() == true ) {
+                boolean m =( Integer.parseInt(num1.getText().toString())) >= 25000;
+            }
+            if (rb2.isChecked() == true ) {
+                boolean m =( Integer.parseInt(num1.getText().toString())) >= 10000;
+            }
+            if (rb3.isChecked() == true ) {
+                boolean m =( Integer.parseInt(num1.getText().toString())) >= 950000;
+            }
+            if (rb4.isChecked() == true ) {
+                boolean m =( Integer.parseInt(num1.getText().toString())) >= 145000;
+            }*/
 
         }
     };
@@ -88,15 +120,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-       /* public void onButtonClick(View v) {
-        double v1 = 0.15;
-        EditText e1 = (EditText)findViewById(R.id.editText);
-        EditText e2 = (EditText)findViewById(R.id.editText2);
-        TextView3 t3 = (TextView)findViewById(R.id.textView3);
-        int num1 = Integer.parseInt(e1.getText().toString());
-        int num2 = Integer.parseInt(e2.getText().toString());
-        int CALCULATE = (int) ((num1 * num2) * v1);
-        t3.setText(Integer.toString(CALCULATE));*/
-    }
+}
 
