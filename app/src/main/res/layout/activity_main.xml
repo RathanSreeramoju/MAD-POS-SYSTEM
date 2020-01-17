@@ -44,21 +44,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Bike" />
+                        android:text="Bike"
+                        android:onClick="onRadioButtonClicked"/>
 
                     <RadioButton
                         android:id="@+id/radioButton3"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Plane" />
+                        android:text="Plane"
+                        android:onClick="onRadioButtonClicked"/>
 
                     <RadioButton
                         android:id="@+id/radioButton2"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Boat" />
+                        android:text="Boat"
+                        android:onClick="onRadioButtonClicked"/>
                 </RadioGroup>
             </LinearLayout>
 
@@ -137,8 +140,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="numberDecimal"
-                        android:enabled="false"/>
+                        android:inputType="number" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -162,8 +165,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="numberDecimal"
-                        android:enabled="false"/>
+                        android:inputType="number" />
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

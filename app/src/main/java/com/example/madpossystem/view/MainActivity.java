@@ -94,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
         TextView textView = (TextView) findViewById(R.id.textView);
+        num1.getText().clear();
+        num2.getText().clear();
+        taxes.getText().clear();
+        total.getText().clear();
 
         // Check which radio button was clicked
         switch(view.getId()) {
