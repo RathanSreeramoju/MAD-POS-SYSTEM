@@ -6,13 +6,18 @@ import static org.junit.Assert.*;
 
 public class ProfilTest {
 
-    private Profil profil = new Profil(25000,165,35,0);
-
+    private Profil profil = new Profil(10000,2,3000,23000);
+    private float taxes = 3000;
+    private float total = 23000;
     @Test
-    public void getTaxes() {
+    public void getTaxes() throws Exception{
+
+        assertEquals(taxes, profil.getTaxes());
     }
 
     @Test
-    public void getTotal() {
+    public void getTotal() throws Exception{
+
+        assertEquals(total,profil.getTotal());
     }
 }
