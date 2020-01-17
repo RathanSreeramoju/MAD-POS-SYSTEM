@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
         num1.addTextChangedListener(watch);
         num2.addTextChangedListener(watch);
-        rb1.setOnClickListener(first_radio_listener);
-        rb2.setOnClickListener(first_radio_listener);
-        rb3.setOnClickListener(first_radio_listener);
-        rb4.setOnClickListener(first_radio_listener);
+        /*rb1.setOnClickListener(optionOnClickListener);
+        rb2.setOnClickListener(optionOnClickListener);
+        rb3.setOnClickListener(optionOnClickListener);
+        rb4.setOnClickListener(optionOnClickListener);*/
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +90,72 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    final View.OnClickListener first_radio_listener = new View.OnClickListener() {
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+        TextView textView = (TextView) findViewById(R.id.textView);
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radioButton5:
+                if (checked)
+                    num1.setText("25000");
+                break;
+            case R.id.radioButton4:
+                if (checked)
+                    num1.setText("10000");
+                break;
+            case R.id.radioButton3:
+                if (checked)
+                    num1.setText("950000");
+                break;
+            case R.id.radioButton2:
+                if (checked)
+                    num1.setText("145000");
+                break;
+
+        }
+    }
+
+    public void launchSecondActivity(View view) {
+
+        Log.d(LOG_TAG, "My Simple Message Button is clicked!");
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+
+    }
+
+}
+
+
+    /*   View.OnClickListener optionOnClickListener
+            = new View.OnClickListener() {
+
+        public void onClick(View v) {
+            TextView tv = (TextView) findViewById(R.id.editText);
+            String str = null;
+
+            // you can simply copy the string of clicked button.
+            str = ((RadioButton)v).getText().toString();
+            tv.setText(str);
+
+            // to go further with check state you can manually check each radiobutton and find which one is checked.
+            if(rb1.isChecked()) {
+                num1.setText("25000");
+            }
+            if(rb2.isChecked()) {
+                num1.setText("9000");
+            }
+            if(rb3.isChecked()) {
+                num1.setText("1000");
+            }
+            if (rb4.isChecked()) {
+                num1.setText("145000");
+            }
+        }
+    };
+
+    /*final View.OnClickListener first_radio_listener = new View.OnClickListener() {
         public void onClick(View v) {
             num1.getText().clear();
             num2.getText().clear();
@@ -107,18 +172,10 @@ public class MainActivity extends AppCompatActivity {
             }
             if (rb4.isChecked() == true ) {
                 boolean m =( Integer.parseInt(num1.getText().toString())) >= 145000;
-            }*/
+            }
 
         }
-    };
+    };     */
 
-    public void launchSecondActivity(View view) {
 
-        Log.d(LOG_TAG, "My Simple Message Button is clicked!");
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
-
-    }
-
-}
 

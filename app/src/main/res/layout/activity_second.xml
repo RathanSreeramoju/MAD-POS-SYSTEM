@@ -25,9 +25,9 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="0.3"
-                    app:srcCompat="@drawable/first" />
+                    app:srcCompat="@drawable/second1" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -50,7 +50,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
-                    app:srcCompat="@drawable/delivery" />
+                    app:srcCompat="@drawable/second2" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -58,7 +58,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center|center_horizontal|left|center_vertical"
-                    android:text="Icecream sandwich"
+                    android:text="Donuts with rainbow sprinkles"
                     android:textSize="24sp" />
             </LinearLayout>
 
@@ -73,7 +73,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
-                    app:srcCompat="@drawable/delivery" />
+                    app:srcCompat="@drawable/second3" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -81,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center|center_horizontal|left|center_vertical"
-                    android:text="hello"
+                    android:text="Choclate donuts"
                     android:textSize="24sp" />
             </LinearLayout>
         </LinearLayout>
