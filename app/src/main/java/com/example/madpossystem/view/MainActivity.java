@@ -13,7 +13,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.madpossystem.CalculatorActivity;
 import com.example.madpossystem.R;
+import com.example.madpossystem.SmsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -118,17 +120,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    /*
-    Caluclator navigation
+
+
 
     public void navigateToCalculator(View view) {
         Log.d(LOG_TAG, "My calculator Button is clicked!");
         Intent intent = new Intent(this, CalculatorActivity.class);
         startActivity(intent);
     }
+
+
     public void navigateToSMS(View view) {
-        Intent i = new Intent(getApplicationContext(), SmsActivity.class);
-        startActivity(i);
+        Log.d(LOG_TAG, "My SMS Button is clicked!");
+        Intent intent = new Intent(this, SmsActivity.class);
+        startActivity(intent);
     }
     /*
     navigate to email
