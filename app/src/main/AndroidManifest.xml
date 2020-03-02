@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ThirdActivity"
+        <activity android:name=".SmsActivity"></activity>
+        <activity
+            android:name=".view.ThirdActivity"
             android:label="@string/activity3_name"
-            android:parentActivityName=".SecondActivity">
+            android:parentActivityName=".view.SecondActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.madpossystem.SecondActivity"></meta-data>
-            </activity>
+                android:value="com.example.madpossystem.view.SecondActivity" />
+        </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".view.SecondActivity"
             android:label="@string/activity2_name"
             android:parentActivityName=".view.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.madpossystem.view.MainActivity"></meta-data>
+                android:value="com.example.madpossystem.view.MainActivity" />
         </activity>
         <activity android:name=".view.MainActivity">
             <intent-filter>

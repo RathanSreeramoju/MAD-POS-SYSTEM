@@ -1,4 +1,4 @@
-package com.example.madpossystem;
+package com.example.madpossystem.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.madpossystem.R;
 
 public class SecondActivity extends AppCompatActivity {
     private static final String LOG_TAG = SecondActivity.class.getSimpleName();

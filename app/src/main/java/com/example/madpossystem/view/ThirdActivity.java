@@ -1,10 +1,13 @@
-package com.example.madpossystem;
+package com.example.madpossystem.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.madpossystem.R;
+import com.example.madpossystem.view.SecondActivity;
 
 public class ThirdActivity extends AppCompatActivity {
 

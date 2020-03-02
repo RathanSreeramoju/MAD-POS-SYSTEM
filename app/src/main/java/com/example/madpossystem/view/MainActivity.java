@@ -2,7 +2,6 @@ package com.example.madpossystem.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -15,15 +14,10 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.madpossystem.R;
-import com.example.madpossystem.SecondActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
-    /*private static final Integer minCar = 25000;
-    private static final Integer minBike = 10000;
-    private static final Integer minPlane = 950000;
-    private static final Integer minBoat = 145500;*/
     private EditText num1;
     private EditText num2;
     private Button calculate;
@@ -49,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
         num1.addTextChangedListener(watch);
         num2.addTextChangedListener(watch);
-        /*rb1.setOnClickListener(optionOnClickListener);
-        rb2.setOnClickListener(optionOnClickListener);
-        rb3.setOnClickListener(optionOnClickListener);
-        rb4.setOnClickListener(optionOnClickListener);*/
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +118,34 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    /*
+    Caluclator navigation
+
+    public void navigateToCalculator(View view) {
+        Log.d(LOG_TAG, "My calculator Button is clicked!");
+        Intent intent = new Intent(this, CalculatorActivity.class);
+        startActivity(intent);
+    }
+    public void navigateToSMS(View view) {
+        Intent i = new Intent(getApplicationContext(), SmsActivity.class);
+        startActivity(i);
+    }
+    /*
+    navigate to email
+     */
+    /*
+    public void navigateToEmail(View view) {
+        Intent i = new Intent(getApplicationContext(), EmailActivity.class);
+        startActivity(i);
+    }
+
+    navigate to call activity
+
+    public void navigateToCall(View view) {
+        Intent i = new Intent(getApplicationContext(), CallActivity.class);
+        startActivity(i);
+    }
+    */
 
 }
 
