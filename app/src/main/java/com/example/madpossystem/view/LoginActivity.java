@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
         // Variables assignment
         b1 = (Button)findViewById(R.id.button);
         ed1 = (EditText)findViewById(R.id.editText);
@@ -34,9 +34,9 @@ public class LoginActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1.getText().toString().equals("admin") &&
+                if(ed1.getText().toString().equals("root") &&
                         ed2.getText().toString().equals("password")) {
-                    Toast.makeText(getApplicationContext(),"Redirecting...",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Loading.....",Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(i);
                     // to be continued ...
