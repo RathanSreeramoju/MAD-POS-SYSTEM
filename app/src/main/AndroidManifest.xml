@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.CallActivity"></activity>
-        <activity android:name=".view.EmailActivity" />
+        <activity android:name=".view.LoginActivity"></activity>
+        <activity android:name=".view.CallActivity" />
         <activity android:name=".view.CalculatorActivity" />
+        <activity android:name=".view.EmailActivity" />
         <activity android:name=".view.SmsActivity" />
         <activity
             android:name=".view.ThirdActivity"

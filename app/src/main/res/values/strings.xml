@@ -7,5 +7,5 @@
     <string name="message_recieved">Message Recieved</string>
     <string name="text_header">Message_recieved</string>
     <string name="editText_second">Enter your Message here</string>
-    <string name="compose_email">compose</string>
+    <string name="compose_email">Compose Email</string>
 </resources>

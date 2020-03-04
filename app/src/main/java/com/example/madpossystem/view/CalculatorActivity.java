@@ -10,6 +10,10 @@ import android.widget.EditText;
 import com.example.madpossystem.R;
 
 public class CalculatorActivity extends AppCompatActivity {
+
+    /*
+     * list of the buttons
+     */
     Button button0, button1, button2, button3, button4, button5, button6,
             button7, button8, button9, buttonAdd, buttonSub, buttonDivision,
             buttonMul, button10, buttonC, buttonEqual;
@@ -26,7 +30,7 @@ public class CalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
-        button0 = (Button) findViewById(R.id.button);
+        button0 = (Button) findViewById(R.id.button0);
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
