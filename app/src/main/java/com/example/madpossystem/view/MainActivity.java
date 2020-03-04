@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    
+
     public void navigateToCalculator(View view) {
         Log.d(LOG_TAG, "My calculator Button is clicked!");
         Intent intent = new Intent(this, CalculatorActivity.class);

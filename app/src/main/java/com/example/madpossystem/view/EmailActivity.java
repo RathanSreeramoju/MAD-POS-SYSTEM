@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.example.madpossystem.R;
 
-public class EmailActivity extends Activity {
+public class EmailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

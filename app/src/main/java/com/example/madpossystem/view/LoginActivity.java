@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.example.madpossystem.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends  AppCompatActivity{
 
     Button b1,b2;
     EditText ed1,ed2;
