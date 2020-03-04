@@ -13,9 +13,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.example.madpossystem.CalculatorActivity;
 import com.example.madpossystem.R;
-import com.example.madpossystem.SmsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -138,14 +136,15 @@ public class MainActivity extends AppCompatActivity {
     /*
     navigate to email
      */
-    /*
+
     public void navigateToEmail(View view) {
-        Intent i = new Intent(getApplicationContext(), EmailActivity.class);
-        startActivity(i);
+        Log.d(LOG_TAG, "My Email Button is clicked!");
+        Intent intent = new Intent(this, EmailActivity.class);
+        startActivity(intent);
     }
-
+/*
     navigate to call activity
-
+    /*
     public void navigateToCall(View view) {
         Intent i = new Intent(getApplicationContext(), CallActivity.class);
         startActivity(i);
