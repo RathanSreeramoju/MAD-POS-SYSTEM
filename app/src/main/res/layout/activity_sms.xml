@@ -27,11 +27,11 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="200dp"
-        android:layout_height="232dp"
+        android:layout_width="293dp"
+        android:layout_height="265dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/delivery" />
+        android:src="@drawable/sms" />
 
     <EditText
         android:layout_width="wrap_content"

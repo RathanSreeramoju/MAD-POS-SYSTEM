@@ -28,11 +28,11 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="307dp"
+        android:layout_width="304dp"
         android:layout_height="187dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/delivery" />
+        android:src="@drawable/mail1" />
 
     <Button
         android:id="@+id/sendEmail"

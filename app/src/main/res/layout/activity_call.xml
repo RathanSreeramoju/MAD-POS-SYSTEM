@@ -10,6 +10,5 @@
         android:id="@+id/buttonCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="call 0377778888"
-        android:name = "android.permission.CALL_PHONE"/>/>
+        android:text="call 8143856060" />
 </LinearLayout>
