@@ -18,7 +18,7 @@ public class EmailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sms;
+        setContentView(R.layout.activity_email);
 
         Button startBtn = (Button) findViewById(R.id.sendEmail);
         startBtn.setOnClickListener(new View.OnClickListener() {

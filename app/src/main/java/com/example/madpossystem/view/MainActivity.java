@@ -142,14 +142,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, EmailActivity.class);
         startActivity(intent);
     }
-/*
-    navigate to call activity
     /*
-    public void navigateToCall(View view) {
-        Intent i = new Intent(getApplicationContext(), CallActivity.class);
-        startActivity(i);
-    }
+    navigate to call activity
     */
+    public void navigateToCall(View view) {
+        Log.d(LOG_TAG, "My Call Button is clicked!");
+        Intent intent = new Intent(this, CallActivity.class);
+        startActivity(intent);
+    }
+
 
 }
 
